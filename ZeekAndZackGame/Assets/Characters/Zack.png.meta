@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 84306592041f9b34c8f4c5c7176425ce
-timeCreated: 1428622207
+timeCreated: 1428623445
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -448,8 +448,8 @@ TextureImporter:
         y: 280
         width: 19
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .519999981, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_26
       rect:
