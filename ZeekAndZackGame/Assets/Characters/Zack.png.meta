@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 84306592041f9b34c8f4c5c7176425ce
-timeCreated: 1428692370
+timeCreated: 1428695544
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -493,8 +493,8 @@ TextureImporter:
         y: 265
         width: 20
         height: 11
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .540000021}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_31
       rect:
@@ -513,8 +513,8 @@ TextureImporter:
         y: 265
         width: 11
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .430000007}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_33
       rect:
@@ -523,8 +523,8 @@ TextureImporter:
         y: 265
         width: 9
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .430000007}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_34
       rect:
@@ -533,8 +533,8 @@ TextureImporter:
         y: 265
         width: 9
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .430000007}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_35
       rect:
@@ -543,8 +543,8 @@ TextureImporter:
         y: 264
         width: 13
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .430000007}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_36
       rect:
@@ -553,8 +553,8 @@ TextureImporter:
         y: 264
         width: 18
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .430000007}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_37
       rect:
