@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 84306592041f9b34c8f4c5c7176425ce
-timeCreated: 1428708196
+timeCreated: 1428958437
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -193,8 +193,8 @@ TextureImporter:
         y: 344
         width: 21
         height: 12
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .460000008}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_1
       rect:
@@ -773,8 +773,8 @@ TextureImporter:
         y: 198
         width: 10
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .435000002}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_59
       rect:
@@ -783,8 +783,8 @@ TextureImporter:
         y: 198
         width: 9
         height: 13
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .444999993, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_60
       rect:
@@ -803,8 +803,8 @@ TextureImporter:
         y: 198
         width: 11
         height: 13
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .545000017, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_62
       rect:
@@ -813,8 +813,8 @@ TextureImporter:
         y: 198
         width: 12
         height: 13
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .584999979, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_63
       rect:
@@ -1443,8 +1443,8 @@ TextureImporter:
         y: 46
         width: 14
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .57099998, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_126
       rect:
@@ -1453,8 +1453,8 @@ TextureImporter:
         y: 46
         width: 15
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .600000024, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_127
       rect:
@@ -1463,8 +1463,8 @@ TextureImporter:
         y: 46
         width: 15
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .600000024, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_128
       rect:
@@ -1473,8 +1473,8 @@ TextureImporter:
         y: 46
         width: 14
         height: 14
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .572000027, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zack_129
       rect:
