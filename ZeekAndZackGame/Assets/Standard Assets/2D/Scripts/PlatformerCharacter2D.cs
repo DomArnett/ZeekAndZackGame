@@ -19,7 +19,9 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = false;  // For determining which way the player is currently facing.
+        private float idle_check = 0;
 
+        private float idle_time { get { return Time.timeSinceLevelLoad - idle_check; } }
         private void Awake()
         {
             // Setting up references.
@@ -27,6 +29,8 @@ namespace UnityStandardAssets._2D
             m_CeilingCheck = transform.Find("CeilingCheck");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            idle_check = Time.timeSinceLevelLoad;
+
         }
 
 
@@ -46,12 +50,12 @@ namespace UnityStandardAssets._2D
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+            m_Anim.SetFloat("IdleTime", idle_time);
         }
 
 
         public void Move(float move, bool crouch, bool jump)
         {
-            m_Anim.SetBool("Rotating", false);
             // If crouching, check to see if the character can stand up
             if (!crouch && m_Anim.GetBool("Crouch"))
             {
@@ -61,6 +65,14 @@ namespace UnityStandardAssets._2D
                     crouch = true;
                 }
             }
+            
+            if (m_Grounded && move != 0f)
+            {
+                idle_check = Time.timeSinceLevelLoad;
+            }
+
+            // Sets a value to measure how long the character has been idle.
+            m_Anim.SetFloat("IdleTime", idle_time);
 
             // Set whether or not the character is crouching in the animator
             m_Anim.SetBool("Crouch", crouch);
@@ -72,21 +84,20 @@ namespace UnityStandardAssets._2D
                 move = (crouch ? move*m_CrouchSpeed : move);
 
                 // Move the character
-                m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
+                m_Rigidbody2D.velocity = new Vector2(move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
 
                 // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !m_FacingRight)
                 {
+                    m_Anim.SetBool("Rotation", true);
                     m_FacingRight = !m_FacingRight;
-                    m_Anim.SetBool("Rotating", true);
                 }
-                    // Otherwise if the input is moving the player left and the player is facing right...
+                // Otherwise if the input is moving the player left and the player is facing right...
                 else if (move < 0 && m_FacingRight)
                 {
+                    m_Anim.SetBool("Rotation", true);
                     m_FacingRight = !m_FacingRight;
-                    m_Anim.SetBool("Rotating", true);
                 }
-
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                 m_Anim.SetFloat("Speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
             }
