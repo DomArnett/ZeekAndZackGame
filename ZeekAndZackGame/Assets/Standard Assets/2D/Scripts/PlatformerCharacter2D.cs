@@ -83,8 +83,11 @@ namespace UnityStandardAssets._2D
                 // Reduce the speed if crouching by the crouchSpeed multiplier
                 move = (crouch ? move*m_CrouchSpeed : move);
 
-                // Move the character
-                m_Rigidbody2D.velocity = new Vector2(move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
+                if (!m_Anim.GetBool("Rotation"))
+                {
+                    // Move the character
+                    m_Rigidbody2D.velocity = new Vector2(move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
+                }
 
                 // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !m_FacingRight)
